@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Energía - EQUIVATIA{% endblock %}
+{% block content %}
+<div class="container mx-auto p-6 max-w-4xl">
+    <h2 class="text-3xl font-bold mb-8">Transparencia Algorítmica</h2>
+    <div class="space-y-12">
+        <section>
+            <h3 class="text-emerald-500 font-mono text-sm mb-4 uppercase tracking-widest">¿Cómo funciona?</h3>
+            <p class="text-lg leading-relaxed text-gray-300">EQUIVATIA utiliza algoritmos de *Matching* para conectar tu generación (como Autogenerador a Pequeña Escala - AGPE) con la demanda de tus vecinos en tiempo real.
+        </section>
+
+        <div class="bg-gray-900 p-8 rounded-3xl border border-gray-800 font-mono text-sm overflow-x-auto">
+            <p class="text-gray-500 mb-4">// Flujo de Inteligencia Descentralizada</p>
+            <p class="text-emerald-400">INPUT: Radiación Solar + Tarifa Bolsa XM + Estrato Socioeconómico</p>
+            <p class="text-blue-400">PROCESS: Predicción de Series Temporales (Machine Learning)</p>
+            <p class="text-white">OUTPUT: Precio Dinámico Justo y Emparejamiento P2P</p>
+        </div>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-6 bg-gray-800/30 rounded-2xl">
+                <h4 class="font-bold mb-2">Sin Daño Ambiental</h4>
+                <p class="text-sm text-gray-500">Verificamos que cada vatio provenga de fuentes renovables (solar, biomasa, microhidro) evitando el greenwashing.</p>
+            </div>
+            <div class="p-6 bg-gray-800/30 rounded-2xl">
+                <h4 class="font-bold mb-2">Trazabilidad Verificable</h4>
+                <p class="text-sm text-gray-500">Auditamos cada transacción para garantizar que los beneficios económicos lleguen directamente al productor local.</p>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}

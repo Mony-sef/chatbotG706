@@ -5,9 +5,31 @@ app = Flask(__name__)
 model, vectorizer, unique_answers = load_model()
 if model is None:
     model, vectorizer, unique_answers = build_and_train_model(training_data)
+
+
 @app.route("/")
 def home():
     return render_template("index.html")
+
+@app.route("/energia")
+def energia():
+    return render_template("energia.html")
+
+@app.route("/beneficios")
+def beneficios():
+    return render_template("beneficios.html")
+
+@app.route("/mapa")
+def mapa():
+    return render_template("mapa.html")
+
+@app.route("/contacto")
+def contacto():
+    return render_template("contacto.html")
+
+
+
+
 @app.route("/chat", methods=["POST"])
 def chat():
     user_text = request.form.get("message", "")

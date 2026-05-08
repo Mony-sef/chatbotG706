@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Beneficios - EQUIVATIA{% endblock %}
+{% block content %}
+<div class="container mx-auto p-6 space-y-8">
+    <header class="py-12">
+        <h1 class="text-5xl font-bold text-white leading-tight">Hola, <span class="text-emerald-500">Prosumidor</span></h1>
+        <p class="text-xl text-gray-400 mt-4 max-w-2xl">Bienvenido a la transición energética justa. Tus paneles solares están listos para empoderar a tu comunidad hoy.</p>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+            <p class="text-gray-500 text-xs uppercase tracking-widest mb-1">Generación Hoy</p>
+            <h2 class="text-4xl font-bold">12.8 <span class="text-sm font-light text-gray-500">kWh</span></h2>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+            <p class="text-gray-500 text-xs uppercase tracking-widest mb-1">Ahorro Social Generado</p>
+            <h2 class="text-4xl font-bold text-emerald-500">$45,200 <span class="text-sm font-light text-gray-500">COP</span></h2>
+        </div>
+        <div class="bg-gray-900 border border-gray-800 p-6 rounded-2xl">
+            <p class="text-gray-500 text-xs uppercase tracking-widest mb-1">CO2 Evitado</p>
+            <h2 class="text-4xl font-bold text-blue-500">1.2 <span class="text-sm font-light text-gray-500">Tons</span></h2>
+        </div>
+    </div>
+
+    <div class="bg-emerald-500/5 border border-emerald-500/20 p-8 rounded-3xl">
+        <div class="flex items-center space-x-4 mb-6">
+            <i class="fa-solid fa-wand-magic-sparkles text-emerald-500 text-2xl"></i>
+            <h3 class="text-xl font-bold">Análisis Predictivo de EQUIVATIA</h3>
+        </div>
+        <p class="text-gray-300">Según nuestro modelo de Machine Learning, mañana habrá un aumento de radiación solar del 15% en tu zona. Se recomienda programar la venta de excedentes a las 11:00 AM para maximizar tu rentabilidad y el beneficio de los consumidores locales.</p>
+    </div>
+</div>
+
+<div class="container mx-auto p-6 py-20">
+    <div class="text-center mb-20">
+        <h2 class="text-4xl font-bold mb-4">Justicia Energética en 3 Dimensiones</h2>
+        <p class="text-gray-500 max-w-xl mx-auto">EQUIVATIA transforma datos brutos en bienestar comunitario y resiliencia territorial.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="space-y-4">
+            <div class="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center">
+                <i class="fa-solid fa-leaf text-blue-500 text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold">Ambiental</h3>
+            <p class="text-gray-400">Promovemos fuentes limpias y sin daño ambiental, reduciendo drásticamente las emisiones de GEI en el sector eléctrico nacional.</p>
+        </div>
+        <div class="space-y-4">
+            <div class="w-16 h-16 bg-emerald-500/10 rounded-2xl flex items-center justify-center">
+                <i class="fa-solid fa-users text-emerald-500 text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold">Social</h3>
+            <p class="text-gray-400">Mitigación de la pobreza energética en hogares de estratos 1, 2 y 3 mediante acceso directo a energía asequible.</p>
+        </div>
+        <div class="space-y-4">
+            <div class="w-16 h-16 bg-orange-500/10 rounded-2xl flex items-center justify-center">
+                <i class="fa-solid fa-chart-line text-orange-500 text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold">Económico</h3>
+            <p class="text-gray-400">Incremento de la rentabilidad para pequeños productores (fincas, cooperativas) eliminando intermediarios costosos.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

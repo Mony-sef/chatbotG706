@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+<div class="container mx-auto p-6 max-w-2xl py-20">
+    <h2 class="text-3xl font-bold mb-4">Centro de Apoyo Ciudadano</h2>
+    <p class="text-green-400 mb-12">Estamos aquí para resolver tus dudas sobre contratos inteligentes, normatividad CREG o gestión de excedentes.</p>
+
+    <form class="space-y-6">
+      <input type="text" placeholder="Nombre"><br><br>
+      <input type="email" placeholder="Correo"><br><br>
+        <div>
+            <label class="block text-xs uppercase tracking-widest text-green-500 mb-2 font-bold">Tipo de Consulta</label>
+            <select class="w-full bg-green-500 border border-green-600 p-4 rounded-xl focus:border-emerald-500 outline-none transition">
+                <option>Ayuda con Contrato Inteligente</option>
+                <option>Marco Legal y Resoluciones</option>
+                <option>Problemas Técnicos de Medición</option>
+                <option>Inscripción como Prosumidor</option>
+            </select>
+        </div>
+        <div>
+            <label class="block text-xs uppercase tracking-widest text-green-500 mb-2 font-bold">Mensaje</label>
+            <textarea class="w-full bg-green-900 border border-green-800 p-4 rounded-xl h-32 focus:border-emerald-500 outline-none transition" placeholder="Escribe tu consulta aquí..."></textarea>
+        </div>
+
+        <div class="bg-green-800/50 p-4 rounded-xl border border-green-800">
+            <p class="text-[20px] text-center text-green-900 font-mono uppercase leading-tight italic">Al enviar este mensaje, aceptas que EQUIVATIA trate tus datos personales bajo principios de privacidad por diseño y transparencia algorítmica.</p>
+        </div>
+
+        <button class="w-full bg-green-500 hover:bg-green-400 text-white font-bold py-4 rounded-xl transition shadow-lg shadow-emerald-500/20">
+            Enviar Consulta
+        </button>
+    </form>
+</div>
+{% endblock %}
